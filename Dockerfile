@@ -92,7 +92,7 @@ RUN mkdir /home/steam/steamcmd &&\
 
 EXPOSE 7777 7778 32330 27015
 # Add UDP
-EXPOSE ${STEAMPORT}/udp ${SERVERPORT}/udp
+EXPOSE 7777/udp 7778/udp 27015/udp
 
 VOLUME  /ark 
 
