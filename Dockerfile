@@ -94,7 +94,7 @@ RUN mkdir /home/steam/steamcmd &&\
 # We can't download from docker hub anymore -_-
 #RUN /home/steam/steamcmd/steamcmd.sh +login anonymous +quit
 
-EXPOSE ${STEAMPORT} 32330 ${SERVERPORT}
+EXPOSE 7777 7778 32330 27015
 # Add UDP
 EXPOSE ${STEAMPORT}/udp ${SERVERPORT}/udp
 
